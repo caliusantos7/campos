@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        4.	Crie um programa no qual:
+a) o usuário informe sua nota na escola
+b) deve haver num botão "opinião da avó"
+c) deve haver num botão "opinião da mãe"
+d) ao clicar num botão "opinião da avó", abaixo dos botões, exibir "Muito bem, que neto inteligente, porque tirou X".
+e) ao clicar num botão "opinião da mãe", abaixo dos botões, exibir "Não fez mais que tua obrigação com essa nota X".
+
+Onde X é a nota que ele digitou.
+
+     -->
+
+     informe sua nota <input type="text" id="ipt_valor" placeholder="informe sua nota ">
+
+     <button onclick="Avo()">Opinião da avó</button>
+     <button onclick="Mae()">Opinião da mãe</button>
+     <span id="mensagem"></span>
+</body>
+</html>
+
+<script>
+    
+    function Avo() {
+        var nota = ipt_valor.value
+        mensagem.innerHTML += `Muito bem, que neto inteligente, porque tirou ${nota}`
+    }
+
+    function Mae() {
+        var nota = ipt_valor.value
+        mensagem.innerHTML += `Não fez mais que sua obrigação com essa nota ${nota}`
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2.	Crie uma página que solicite ao usuário que digite seu peso e altura.
+Deve haver um botão com o texto "Fale comigo".
+Ao clicar no botão, deve aparecer uma frase como esta numa caixinha de alerta:
+"Você pesa X e tem Y de altura"
+Onde X e Y são os valores que o usuário digitou, claro
+ -->
+
+Digite sua altura: <input type="text" id="ipt_altura" placeholder="sua altura">
+Digite seu peso: <input type="text" id="ipt_peso" placeholder="seu peso">
+     
+<button onclick="falar()">Fale comigo</button>
+
+</body>
+</html>
+
+<script>
+    function falar() {
+        var alto = ipt_altura.value
+        var pesar = ipt_peso.value
+
+        alert(`Você pesa ${pesar} e tem ${alto} `)
+    }
+</script>

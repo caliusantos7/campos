@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        3.	Crie uma página que solicite ao usuário que digite o nome do time que torce e quantos mundiais de clube ele.
+Deve haver um botão com o texto "Amo meu time".
+Ao clicar no botão, deve aparecer uma frase como esta numa caixinha de alerta:
+"O time X tem Y mundiais da FIFA"
+Onde X e Y são os valores que o usuário digitou, claro
+
+     -->
+
+     Qual time você torce: <input type="text" id="ipt_time">
+     Quantos mundiais seu time possui?<input type="text" id="ipt_mundiais">
+
+     <button onclick="Time()">Amo meu time</button>
+</body>
+</html>
+
+<script>
+    function Time() {
+        var clube = ipt_time.value
+        var titulo = ipt_mundiais.value
+         
+        alert(`O time ${clube} tem ${titulo} mundiais da FIFA`)
+}
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        5.	Crie um programa o qual:
+a) Tenha os botões "Pare", "Pense" e "Siga".
+b) Ao clicar no 1º, aparece para o usuário a frase "Pare e aguarde!". Ao clicar no 2º botão, a frase que deve aperecer é: "Pense se pode seguir ou se deve parar!". Ao clicar no 3º botão, a frase que deve aperecer é:  "Pode seguir adiante :)".
+
+     -->
+
+     <button onclick="Pare()">Pare</button>
+     <button onclick="Pense()">Pense</button>
+     <button onclick="Siga()">Siga</button>
+     <span id="mensagem"></span>
+</body>
+</html>
+
+<script>
+    function Pare() {
+        mensagem.innerHTML += `Pare e aguarde`
+    }
+    function Pense() {
+        mensagem.innerHTML += `Pense se pode seguir ou se deve parar`
+    }
+    function Siga() {
+        mensagem.innerHTML += `Pode seguir adiante`
+    }
+    
+</script>
